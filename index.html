@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="icon" href="images/download.ico">
+</head>
+<body>
+
+    <header class="header">
+        <h1><i class="fas fa-cloud"></i> Weather App</h1>
+    </header>
+
+    <form id="search-form">
+        <h2>Search Weather</h2>
+        <input autocomplete="off" autofocus type="text" id="search_input" placeholder="Enter a city name">
+        <button type="submit">
+            Search
+        </button>
+    </form>
+
+    <br>
+    <br>
+
+    <div class="weather-card"></div>
+
+    <div class="modal loading-modal">
+        <div class="loader"></div>
+    </div>
+
+    <!-- my JS -->
+    <script src="app.js"></script>
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
